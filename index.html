@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+/*
+ * Photobox
+ *
+ * Copyright 2012, Yair Even Or
+ * https://dropthebit.com
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+-->
+<html lang="en">
+<head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta charset="utf-8">
+	<title>EntranceQP.com</title>
+	<meta name="description" content="A complete collection of solved question papers of engineering and medical entrance exminations from 1993 to 2015.">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="photobox/photobox.css">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script-->
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src='photobox/jquery.photobox.js'></script>
+</head>
+<body>
+	<div id='wrap'>
+		<div class='main'>
+			<img src="eqpHr.png">
+			<p>A complete collection of solved question papers of engineering and medical entrance examinations from 1993 to 2015.</p>
+				<ul>
+					<li style="background-color:#6D2C9B;"><a href="#">AIEEE</a></li>
+					<li style="background-color:#E53E58;"><a href="#">IIT-JEE</a></li>
+					<li style="background-color:#1979D2;"><a href="#">AIEEE</a></li>
+					<li style="background-color:#3D962B;"><a href="#">KERALA</a></li>
+				</ul>
+			</div>
+		<ul id='gallery'></ul>
+	</div>
+	<footer>Powered by Flewup Technologies<span class='copy'>&copy;</span> 2015 <a href='http:/flewup.com' target="_blank">Flewup.com</a></footer>
+	<script>
+	// finally, initialize photobox on all retrieved images
+		$('#gallery').photobox('a', { thumbs:true, loop:false }, callback);
+		// using setTimeout to make sure all images were in the DOM, before the history.load() function is looking them up to match the url hash
+		setTimeout(window._photobox.history.load, 2000);
+		function callback(){
+			console.log('callback for loaded content:', this);
+		};
+	
+	</script>
+	<script src='Mydata.js'></script>
+	<!--script src='demo.js'></script!-->
+	
+</body>
+</html>

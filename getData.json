@@ -1,0 +1,13 @@
+[{
+	"title": "Quote 1",
+	"url": "quotes/(1).jpg",
+	"thumb": "quotes/(1).jpg"
+}, {
+	"title": "Quote 2",
+	"url": "quotes/(2).jpg",
+	"thumb": "quotes/(2).jpg"
+}, {
+	"title": "Quote 3",
+	"url": "quotes/(3).jpg",
+	"thumb": "quotes/(3).jpg"
+}]
